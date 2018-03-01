@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Ksenya Ivashkina](https://up.htmlacademy.ru/htmlcss/20/user/548155).
-* Наставник: `Алексей Пудников`.
+* Наставник: [Алексей Пудников](https://htmlacademy.ru/profile/id71418).
 
 ---
 
