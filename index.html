@@ -21,9 +21,25 @@
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О Компании</a></li>
       </ul>
-      <button class="button search"></button>
+      <button class="button search" aria-label="Поиск"></button>
+      <div class="search-popover">
+        <form class="search-form" action="#" method="get">
+          <input type="text" name="serch-name" placeholder="Что ищем?">
+        </form>
+      </div>
+
       <button class="button login">Вход</button>
-      <a class="button cart" href="cart.html">Пусто</a>
+      <div class="login-popover">
+        <form class="login-form" action="#" method="post">
+          <input type="text" name="email-name" placeholder="Электронная почта">
+          <input type="text" name="password-name" placeholder="Пароль?">
+          <button class="button" type="submit">Войти</button>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </form>
+      </div>
+
+      <a class="button cart" href="cart.html" aria-label="Корзина">Пусто</a>
       <div class="working-info">
         <span class="working-time">C 10 до 20, ежедневно</span>
         <a class="phone" href="tel:8 812 450-25-25">8 812 450-25-25</a>
@@ -170,10 +186,10 @@
       <footer class="info">
         <div class="container">
         <ul class="info-social">
-          <li><a class="social-button" href="#">Твитер</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#" aria-label="Твитер"></a></li>
+          <li><a class="social-button" href="#" aria-label="Инстаграм"></a></li>
+          <li><a class="social-button" href="#" aria-label=">Фейсбук"></a></li>
+          <li><a class="social-button" href="#" aria-label="Вконтакте"></a></li>
         </ul>
         <ul class="info-footer">
           <li><a href="#">Для поставщиков</a></li>
@@ -187,6 +203,18 @@
         </div>
         </div>
       </footer>
+
+    <div class="modal">
+      <h3>Мы обязательно вам ответим!</h3>
+      <button class="buttom-close" aria-label="Закрыть"></button>
+      <form class="feedback-form" action="#" method="post">
+        <input type="text" name="name" placeholder="Как вас зовут?">
+        <input type="text" name="email" placeholder="Ваша почта для ответа?">
+        <input type="text" name="text" placeholder="Напишите что-нибудь...">
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </div>
+
   </body>
 </html>
 

@@ -23,9 +23,32 @@
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О Компании</a></li>
       </ul>
-      <button class="button search"></button>
+      <button class="button search" aria-label="Поиск"></button>
       <button class="button login">Вход</button>
-      <a class="button cart" href="cart.html">Пусто</a>
+      <a class="button cart" href="cart.html" aria-label="Корзина">2 товара</a>
+      <section class="cart-goods">
+        <ul class="cart-list">
+          <li class="list-goods">
+            <button class="button-close" area-label="Закрыть"></button>
+            <img src="img/orange-mini.jpg" alt="Апельсин">
+            <span>Пломбир с апельсиновым джемом</span>
+            <span>1,5 кг</span>
+            <span>200 руб.</span>
+            <span>300 руб.</span>
+          </li>
+          <li class="list-goods">
+            <button class="button-close" area-label="Закрыть"></button>
+            <img src="img/strawberry-mini.jpg" alt="Клубника">
+            <span>Клубничный пломбир с присыпкой <br>
+            из белого шоколада</span>
+            <span>1,5 кг</span>
+            <span>300 руб.</span>
+            <span>450 руб.</span>
+          </li>
+        </ul>
+        <strong>Итого:750руб</strong>
+        <button class="button">Оформить заказ</button>
+      </section>
       <div class="working-info">
         <span class="working-time">C 10 до 20, ежедневно</span>
         <span class="phone" href="tel:8 812 450-25-25">8 812 450-25-25</span>
@@ -42,7 +65,56 @@
     
     <section class="sorting">
 
-    <!-- Здесь будет сортировка -->
+    <form class="sorting-form" action="#" method="post">
+    <fieldset class="sorting-fieldset">
+      <legend class="sorting-legend">Сортировка:</legend>
+      <input list="fridges" name="sorting">
+      <datalist id="fridges">
+        <option value="По популярности"></option>
+        <option value="Сначала недорогие"></option>
+        <option value="Сначала дорогие"></option>
+        <option value="По жирности"></option>
+      </datalist>
+    </fieldset>
+    <fieldset class="sorting-fieldset">
+      <legend class="sorting-legend">Цена:</legend>
+        <input type="range" name="sorting-prise">
+    </fieldset>
+    <fieldset class="sorting-fieldset">
+      <legend class="sorting-legend">Жирность:</legend>
+      <label>0%
+        <input type="radio" name="sorting-fat-content">
+      </label>
+      <label>10%
+        <input type="radio" name="sorting-fat-content">
+      </label>
+      <label>30%
+        <input type="radio" name="sorting-fat-content">
+      </label>
+      <label>Выще 30%
+        <input type="radio" name="sorting-fat-content">
+      </label>
+    </fieldset>
+    <fieldset class="sorting-fieldset">
+      <legend class="sorting-legend">Наполнители:</legend>
+      <label>Шоколадные
+        <input type="checkbox" name="sorting-filler-chocolate" checked>
+      </label>
+      <label>Сахарные присыпки
+        <input type="checkbox" name="sorting-filler-sugar" checked>
+      </label>
+      <label>Фрукты
+        <input type="checkbox" name="sorting-filler-fruit">
+      </label>
+      <label>Сиропы
+        <input type="checkbox" name="sorting-filler-syrup">
+      </label>
+      <label>Джемы
+        <input type="checkbox" name="sorting-filler-jam">
+      </label>
+    </fieldset>
+    <button class="button apply-button" type="submit">Применить</button>
+    </form>
 
     </section>
 
@@ -180,10 +252,10 @@
     <footer class="info">
         <div class="container">
         <ul class="info-social">
-          <li><a class="social-button" href="#">Твитер</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#" aria-label="Твитер"></a></li>
+          <li><a class="social-button" href="#" aria-label="Инстаграм"></a></li>
+          <li><a class="social-button" href="#" aria-label=">Фейсбук"></a></li>
+          <li><a class="social-button" href="#" aria-label="Вконтакте"></a></li>
         </ul>
         <ul class="info-footer">
           <li><a href="#">Для поставщиков</a></li>
